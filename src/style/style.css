@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lora:wght@500&display=swap");
+.navbar ul li {
+  font-family: "Amatic SC", cursive;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fbf7f2;
+}
+
+/*# sourceMappingURL=style.css.map */
