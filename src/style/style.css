@@ -1,8 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lora:wght@500&display=swap");
 .navbar ul li {
+  position: relative;
   font-family: "Amatic SC", cursive;
-  font-size: 3em;
+  font-size: 2.6vw;
   font-weight: bolder;
+}
+.navbar ul li a img {
+  -webkit-filter: drop-shadow(-15px 3px 12px rgba(0, 0, 0, 0.84));
+  filter: drop-shadow(-15px 3px 12px rgba(0, 0, 0, 0.84));
+}
+.navbar ul .menu::before {
+  display: none;
+  position: absolute;
+  top: 0.9vw;
+  left: -2.4vw;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f13d";
+  font-size: 0.6em;
+  color: #596643;
+  padding-left: -20px;
+}
+.navbar ul .menu:hover::before {
+  display: block;
+}
+
+.header {
+  background-image: url("../../public/assets/images/test.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .header_text h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.header .header_text p {
+  font-family: "Lora", serif;
+  font-size: 1.2em;
+  margin: 0.5em;
+}
+
+.banner {
+  background-image: url("../../public/assets/images/fonds-fleur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vw;
+}
+@keyframes wipe-enter {
+  0% {
+    -webkit-transform: scale(0, 0.025);
+    transform: scale(0, 0.025);
+  }
+  50% {
+    -webkit-transform: scale(1, 0.025);
+    transform: scale(1, 0.025);
+  }
+}
+.banner .banner_wrapper {
+  visibility: hidden;
+}
+.banner .banner_wrapper .banner_wrapper_anim {
+  visibility: visible;
+  -webkit-animation: wipe-enter 0.9s 1;
+  animation: wipe-enter 0.9s 1;
+}
+.banner .banner_wrapper .banner_text {
+  background-color: white;
+}
+.banner .banner_wrapper .banner_text p {
+  font-family: "Lora", serif;
+  font-size: 1.6em;
+}
+.banner .banner_wrapper .banner_text .cit {
+  font-style: italic;
 }
 
 * {

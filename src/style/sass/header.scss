@@ -1,0 +1,23 @@
+.header {
+
+    background-image: url($background-header);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .header_text {
+
+        h1 {
+            font-family: $title-font;
+            font-size: 5em;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+
+        p {
+            font-family: $text-font;
+            font-size: 1.2em;
+            margin: 0.5em;
+
+        }
+    }
+}

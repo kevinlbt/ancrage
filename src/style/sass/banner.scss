@@ -1,0 +1,45 @@
+.banner {
+
+    background-image: url($background-banner);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vw;
+
+    @keyframes wipe-enter {
+        0% {
+            -webkit-transform: scale(0, .025);
+            transform: scale(0, .025);
+        }
+
+        50% {
+            -webkit-transform: scale(1, .025);
+            transform: scale(1, .025);
+        }
+    }
+
+    .banner_wrapper {
+
+        visibility: hidden;
+
+        & .banner_wrapper_anim {
+            visibility: visible;
+            -webkit-animation: wipe-enter 0.9s 1;
+            animation: wipe-enter 0.9s 1;
+        }
+
+        .banner_text {
+
+            background-color: white;
+
+            p {
+
+                font-family: $text-font;
+                font-size: 1.6em;
+            }
+
+            .cit {
+                font-style: italic;
+            }
+        }
+    }
+}

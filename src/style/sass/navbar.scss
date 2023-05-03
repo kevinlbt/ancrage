@@ -1,11 +1,37 @@
 .navbar {
 
-    ul {
+    & ul {
 
-        li {
+        & li {
+                position: relative;
             font-family: $title-font;
-            font-size: 3em;
+            font-size: 2.6vw;
             font-weight: bolder;
+        & a {
+        
+                & img {
+        
+                    -webkit-filter: drop-shadow(-15px 3px 12px rgba(0, 0, 0, 0.84));
+                    filter: drop-shadow(-15px 3px 12px rgba(0, 0, 0, 0.84));
+                }
+            }
+        }
+        
+        .menu::before {
+            display: none;
+            position: absolute;
+            top: 0.9vw;
+            left: -2.4vw;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: '\f13d';
+            font-size: 0.6em;
+            color: #596643;
+            padding-left: -20px;
+        }
+        
+        .menu:hover::before {
+            display: block;
         }
     }
 }

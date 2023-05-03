@@ -1,10 +1,13 @@
-
+import Header from '../components/header'
+import Banner from '../components/Banner'
+import React from 'react';
 
 function Home() {
-  return (
-    <div className="text-5xl m-12">
-      hello there
-    </div>
+
+  return (<React.Fragment>
+    <Header />
+    <Banner />
+  </React.Fragment>
   );
 }
 
