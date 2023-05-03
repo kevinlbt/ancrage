@@ -1,0 +1,11 @@
+.grid_item {
+
+
+    .content_articles_overflow {
+        height: 11em;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+    }
+}

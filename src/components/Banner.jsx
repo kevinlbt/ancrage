@@ -9,8 +9,8 @@ export default function Banner() {
     })
 
     return <div className="banner flex justify-center items-center my-12">
-        <div ref={containerRef} class="banner_wrapper w-2/3">
-            <div class={`banner_text rounded-xl p-16 text-center ${isVisible ? "banner_wrapper_anim" : null}`}>
+        <div ref={containerRef} className="banner_wrapper w-2/3">
+            <div className={`banner_text rounded-xl p-16 text-center ${isVisible ? "banner_wrapper_anim" : null}`}>
                 <p> Nulla imperdiet mauris sed sapien dignissim id aliquam est aliquam. Maecenas non odio ipsum, a elementum nisi.
                     Mauris non erat eu erat placerat convallis.
                 </p>

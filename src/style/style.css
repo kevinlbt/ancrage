@@ -39,7 +39,8 @@
 .header .header_text p {
   font-family: "Lora", serif;
   font-size: 1.2em;
-  margin: 0.5em;
+  margin: 1em;
+  text-align: center;
 }
 
 .banner {
@@ -75,6 +76,23 @@
 }
 .banner .banner_wrapper .banner_text .cit {
   font-style: italic;
+}
+
+.description_text h2 {
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.description_text p {
+  font-family: "Lora", serif;
+}
+
+.grid_item .content_articles_overflow {
+  height: 11em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
 }
 
 * {
