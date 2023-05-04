@@ -87,12 +87,42 @@
   font-family: "Lora", serif;
 }
 
+.grid_item {
+  position: relative;
+}
+.grid_item .img_wrapper {
+  width: 110%;
+}
+.grid_item .img_wrapper img {
+  height: 40vh;
+}
+.grid_item h3 {
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+}
+.grid_item .fig_date {
+  position: absolute;
+  width: 5em;
+  top: 2em;
+  left: 2em;
+  background-color: #fbf7f2;
+  border-radius: 20px;
+  padding: 1em;
+  text-align: center;
+}
 .grid_item .content_articles_overflow {
-  height: 11em;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
+}
+.grid_item a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+  font-size: 1em;
+  color: white;
+  padding-left: 15px;
 }
 
 * {

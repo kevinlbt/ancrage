@@ -1,11 +1,44 @@
 .grid_item {
+position: relative;
 
+    .img_wrapper {
+        width: 110%;
 
-    .content_articles_overflow {
-        height: 11em;
+        img {
+            height: 40vh;
+        }
+    }
+    
+                                & h3 {
+                                    font-family: $title-font;
+                                    font-weight: bold;
+                                }
+                
+                                .fig_date {
+                                    position: absolute;
+                                    width: 5em;
+                                    top: 2em;
+                                    left: 2em;
+                                    background-color: $background-color;
+                                    border-radius: 20px;
+                                    padding: 1em;
+                                    text-align: center;
+                
+                                }
+
+.content_articles_overflow {
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 8;
         -webkit-box-orient: vertical;
     }
+& a::after {
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f061';
+    font-size: 1em;
+    color: white;
+    padding-left: 15px;
+}
 }
