@@ -1,44 +1,46 @@
 .grid_item {
-position: relative;
+
+    position: relative;
 
     .img_wrapper {
-        width: 110%;
+            width: 105%;
 
-        img {
+    img {
             height: 40vh;
         }
     }
-    
-                                & h3 {
-                                    font-family: $title-font;
-                                    font-weight: bold;
-                                }
-                
-                                .fig_date {
-                                    position: absolute;
-                                    width: 5em;
-                                    top: 2em;
-                                    left: 2em;
-                                    background-color: $background-color;
-                                    border-radius: 20px;
-                                    padding: 1em;
-                                    text-align: center;
-                
-                                }
 
-.content_articles_overflow {
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 8;
-        -webkit-box-orient: vertical;
+    & h3 {
+        font-family: $title-font;
+        font-weight: bold;
     }
-& a::after {
 
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: '\f061';
-    font-size: 1em;
-    color: white;
-    padding-left: 15px;
-}
+    .fig_date {
+        position: absolute;
+        width: 5em;
+        top: 35vh;
+        left: 1em;
+        background-color: $background-color;
+        border-radius: 20px;
+        padding: 0.6em;
+        text-align: center;
+        font-family: $text-font;
+        font-size: 20px;
+    }
+
+    .content_articles_overflow {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+        }
+    & a::after {
+
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: '\f061';
+        font-size: 1em;
+        color: white;
+        padding-left: 15px;
+    }
 }

@@ -3,7 +3,7 @@
 export default function Header() {
 
     return <div className="header w-4/5 p-12 mx-auto rounded-xl my-24">
-        <div className="flex justify-around items-center p-12 bg-white/60 rounded-xl">
+        <div className="flex justify-around items-center p-12 bg-white/70 rounded-xl">
             <div className="header_text w-2/4 flex flex-col justify-center items-center">
                 <h1>Ancrage c'est quoi ?</h1>
                 <p>Ancrage est une association qui a pour vocation de rendre
@@ -18,7 +18,7 @@ export default function Header() {
                     découler.
                 </p>
             </div>
-            <img className="w-1/4 h-auto rounded-xl" srcSet="./assets/images/tableau.jpg" alt="" />
+            <img className="w-1/4 h-auto rounded-xl" srcSet="./assets/images/tab.webp" alt="" />
         </div>
     </div>
 }

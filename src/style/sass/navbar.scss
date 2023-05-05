@@ -3,9 +3,9 @@
     & ul {
 
         & li {
-                position: relative;
+            position: relative;
             font-family: $title-font;
-            font-size: 2.6vw;
+            font-size: 2vw;
             font-weight: bolder;
         & a {
         
@@ -13,6 +13,11 @@
         
                     -webkit-filter: drop-shadow(-15px 3px 12px rgba(0, 0, 0, 0.84));
                     filter: drop-shadow(-15px 3px 12px rgba(0, 0, 0, 0.84));
+                    transition: transform 0.4s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -20,7 +25,7 @@
         .menu::before {
             display: none;
             position: absolute;
-            top: 0.9vw;
+            top: 0.6vw;
             left: -2.4vw;
             font-family: "Font Awesome 5 Free";
             font-weight: 900;

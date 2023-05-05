@@ -22,7 +22,7 @@ export default function Articles() {
 
     useEffect(() => {
         (async function () {
-            const { data } = await axios.get("https://my-strapi.kevinlebot.com/api/articles?&populate=*&pagination[pageSize]=3", {
+            const { data } = await axios.get("https://my-strapi.kevinlebot.com/api/articles?&populate=*&sort[0]=createdAt%3Adesc&pagination[pageSize]=3", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

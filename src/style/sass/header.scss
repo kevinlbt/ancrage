@@ -11,6 +11,12 @@
             font-size: 5em;
             text-transform: uppercase;
             font-weight: bolder;
+            transition: all 0.4s;
+        
+            &:hover {
+
+                transform: scale(1.1) rotate(5deg);
+            }
         }
 
         p {
@@ -19,6 +25,16 @@
             margin: 1em;
                 text-align: center;
 
+        }
+    }
+
+    img {
+
+        transition: all 0.4s;
+
+        &:hover {
+
+            transform: scale(1.1) rotate(5deg);
         }
     }
 }
