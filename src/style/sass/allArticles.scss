@@ -11,6 +11,12 @@
             img {
                 height: 55vh;
                 border-radius: 5%;
+                @media (max-width:1200px) {
+                    height: 45vh;
+                }
+                @media (max-width:1024px) {
+                    height: 35vh;
+                }
             }
         }
 
@@ -24,12 +30,26 @@
             display: -webkit-box;
             -webkit-line-clamp: 9;
             -webkit-box-orient: vertical;
+
+            @media (max-width:1024px) {
+                -webkit-line-clamp: 7;
+            }
         }
-        button {
+        a {
             background-color: $green;
 
             &:hover {
                 background-color: $green-light;
+            }
+
+            &::after {
+
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: '\f061';
+                font-size: 1em;
+                color: white;
+                padding-left: 15px;
             }
         }
     }

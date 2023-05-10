@@ -25,9 +25,10 @@ export default function ArticlePage () {
             setLastArticles(data.data.shift())
             setAllArticlesData(data.data);
             setArticlesData(data.data);
-            setCategories(data.data.reduce((acc, cat) => acc.includes(cat.attributes.julie_categorie.data.attributes.categorie) ? acc : acc.concat(cat.attributes.julie_categorie.data.attributes.categorie), []))
+            const categories = data.data.reduce((acc, cat) => acc.includes(cat.attributes.julie_categorie.data.attributes.categorie) ? acc : acc.concat(cat.attributes.julie_categorie.data.attributes.categorie), [])
+            setCategories(categories)
         })();
-    }, [setAllArticlesData, setLastArticles])
+    }, [setAllArticlesData, setLastArticles, setArticlesData, setCategories])
 
     function handleCategorie (e) {
         let cat = e.target.innerHTML;
@@ -47,7 +48,7 @@ export default function ArticlePage () {
         <div className="loader mx-auto my-48"></div> 
         : 
         <React.Fragment>
-            <h1 className='text-6xl ml-48'>- Dernier Article -</h1>
+            <h1 className='text-5xl lg:text-6xl ml-24 lg:ml-48'>- Dernier Article -</h1>
             <BigArticles lastArticle={lastArticle} />
             <Categories categories={categories} handleCategorie={handleCategorie} catActive={catActive} />
             <AllArticles articlesData={articlesData} />

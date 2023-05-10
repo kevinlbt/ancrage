@@ -15,6 +15,9 @@ const LighthouseBack = styled.div`
   @media (max-width: 1024px) {
     height: 65vw;
   }
+  @media (max-width: 640px) {
+    height: 95vw;
+  }
 `
 
 function Home() {

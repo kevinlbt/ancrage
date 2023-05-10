@@ -35,7 +35,7 @@ export default function Articles() {
 
     return <section className="articles_home"> 
         <h3 className="text-7xl text-center m-8">articles</h3>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 mx-8 lg:mx-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mx-8 lg:mx-24">
             {threeArticlesData.map((article) => (
                 <div key={article.id} className="grid_item bg-stone-200 m-6 lg:m-10 rounded-xl flex flex-col items-center" >
                     <div className="img_wrapper">

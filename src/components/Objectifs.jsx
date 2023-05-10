@@ -6,21 +6,21 @@ export default function Objectifs() {
     const [containerRef, isVisible] = useElementOnScreen({
         root: null,
         rootMargin: "0px",
-        threshold: 0.6,
+        threshold: 0.5,
     })
 
     return <React.Fragment>
-        <div ref={containerRef} className="objs flex justify-evenly items-center">
-            <div className={`w-1/4 m-7 flex flex-col justify-center items-center left ${isVisible ? "appear" : null}`}>
-                <i className="fa-solid fa-thumbtack text-7xl text-green-800"></i>
+        <div ref={containerRef} className="objs flex flex-col sm:flex-row justify-evenly items-center">
+            <div className={`sm:w-1/4 m-7 flex flex-col justify-center items-center left ${isVisible ? "appear" : null}`}>
+                <i className="fa-solid fa-thumbtack text-5xl sm:text-7xl text-green-800"></i>
+                <p className="text-center m-2 lg:m-8 text-base text-lg lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit a commodi beatae consequatur ipsum esse consectetur sint.</p>
+            </div>
+            <div className={`sm:w-1/4 m-7 flex flex-col justify-center items-center bot ${isVisible ? "appear" : null}`}>
+                <i className="fa-solid fa-thumbtack text-5xl sm:text-7xl text-green-800"></i>
                 <p className="text-center m-2 lg:m-8 text-lg lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit a commodi beatae consequatur ipsum esse consectetur sint.</p>
             </div>
-            <div className={`w-1/4 m-7 flex flex-col justify-center items-center bot ${isVisible ? "appear" : null}`}>
-                <i className="fa-solid fa-thumbtack text-7xl text-green-800"></i>
-                <p className="text-center m-2 lg:m-8 text-lg lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit a commodi beatae consequatur ipsum esse consectetur sint.</p>
-            </div>
-            <div className={`w-1/4 m-7 flex flex-col justify-center items-center right ${isVisible ? "appear" : null}`}>
-                <i className="fa-solid fa-thumbtack text-7xl text-green-800"></i>
+            <div className={`sm:w-1/4 m-7 flex flex-col justify-center items-center right ${isVisible ? "appear" : null}`}>
+                <i className="fa-solid fa-thumbtack text-5xl sm:text-7xl text-green-800"></i>
                 <p className="text-center m-2 lg:m-8 text-lg lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit a commodi beatae consequatur ipsum esse consectetur sint.</p>
             </div>
         </div>

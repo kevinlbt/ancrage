@@ -1,7 +1,10 @@
 .navbar {
 
-    & ul {
+    .desktop_menu {
 
+        @media (max-width:640px) {
+            display: none;
+        }
         & li {
             position: relative;
             font-family: $title-font;
@@ -41,6 +44,52 @@
         
         .menu:hover::before {
             display: block;
+        }
+    }
+
+    .mobile_menu {
+
+        @media (min-width:640px) {
+            display: none;
+        }
+
+        i {
+            font-size: 3em;
+            padding-right: 1em;
+            @media (max-width:340px) {
+                padding-right: 0.3em;
+            }
+        }
+        ul {
+            width: 20em;
+            background-color: $green-light;
+            padding: 3em;
+            border-radius: 0 0 0 10%;
+            position: fixed;
+            top: 0em;
+            right: 0;
+            transform: translateX(200%);
+            transition: all 0.8s;
+            z-index: 10;
+
+            li {
+                padding: 0.6em;
+                font-family: $title-font;
+                font-weight: 900;
+                font-size: 2.2em;
+                text-transform: uppercase;
+
+                i {
+                    top: 0.4em;
+                    left: 0.7em;
+                    font-size: 1em;
+                }
+
+            }
+        }
+
+        .mobile_menu_display {
+            transform: translateX(0%);
         }
     }
 }

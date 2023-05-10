@@ -5,20 +5,23 @@ import './style/style.css'
 import Home from './pages/Home';
 import NavBar from './components/navbar'
 import Footer from './components/footer'
+import ArticleSolo from './components/ArticleSolo'
 import About from './pages/about'
 import ArticlePage from './pages/articlePage'
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
         <NavBar />
         <Routes>
             <Route path='/' Component={Home}/>
-            <Route path='/apropos' Component={About}/>
-            <Route path='/articles' Component={ArticlePage}/>
+            <Route path='/apropos' element={<About />}/>
+            <Route path='/articles' element={<ArticlePage />}/>
+            <Route path='/article/:id' element={<ArticleSolo />}/>
         </Routes>
       <Footer />
     </BrowserRouter>
