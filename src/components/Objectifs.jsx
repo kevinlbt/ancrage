@@ -11,17 +11,17 @@ export default function Objectifs() {
 
     return <React.Fragment>
         <div ref={containerRef} className="objs flex justify-evenly items-center">
-            <div className={`w-1/4 m-7 flex flex-col justify-center items-center left ${isVisible ? "appear_left" : null}`}>
+            <div className={`w-1/4 m-7 flex flex-col justify-center items-center left ${isVisible ? "appear" : null}`}>
                 <i className="fa-solid fa-thumbtack text-7xl text-green-800"></i>
-                <p className="text-center m-12 text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit a commodi beatae consequatur ipsum esse consectetur sint.</p>
+                <p className="text-center m-2 lg:m-8 text-lg lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit a commodi beatae consequatur ipsum esse consectetur sint.</p>
             </div>
-            <div className={`w-1/4 m-7 flex flex-col justify-center items-center bot ${isVisible ? "appear_bot" : null}`}>
+            <div className={`w-1/4 m-7 flex flex-col justify-center items-center bot ${isVisible ? "appear" : null}`}>
                 <i className="fa-solid fa-thumbtack text-7xl text-green-800"></i>
-                <p className="text-center m-12 text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit a commodi beatae consequatur ipsum esse consectetur sint.</p>
+                <p className="text-center m-2 lg:m-8 text-lg lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit a commodi beatae consequatur ipsum esse consectetur sint.</p>
             </div>
-            <div className={`w-1/4 m-7 flex flex-col justify-center items-center right ${isVisible ? "appear_right" : null}`}>
+            <div className={`w-1/4 m-7 flex flex-col justify-center items-center right ${isVisible ? "appear" : null}`}>
                 <i className="fa-solid fa-thumbtack text-7xl text-green-800"></i>
-                <p className="text-center m-12 text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit a commodi beatae consequatur ipsum esse consectetur sint.</p>
+                <p className="text-center m-2 lg:m-8 text-lg lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit a commodi beatae consequatur ipsum esse consectetur sint.</p>
             </div>
         </div>
         <div className="description_text w-2/3 mx-auto mb-24 mt-12 text-center">

@@ -5,6 +5,10 @@
     background-size: cover;
     height: 35vw;
 
+    @media (max-width: 1024px) {
+        height: 50vw;
+    }
+
     @keyframes wipe-enter {
         0% {
             -webkit-transform: scale(0, .025);
@@ -35,6 +39,9 @@
 
                 font-family: $text-font;
                 font-size: 1.6em;
+                @media (max-width: 1024px) {
+                    font-size: 1.2em;
+                }
             }
 
             .cit {

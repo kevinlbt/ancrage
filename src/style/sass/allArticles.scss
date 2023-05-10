@@ -1,0 +1,36 @@
+.all_article {
+
+
+    div {
+
+        border-radius: 5%;
+
+        div {
+            
+            width: 105%;
+            img {
+                height: 55vh;
+                border-radius: 5%;
+            }
+        }
+
+        h3 {
+            font-family: $title-font;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 9;
+            -webkit-box-orient: vertical;
+        }
+        button {
+            background-color: $green;
+
+            &:hover {
+                background-color: $green-light;
+            }
+        }
+    }
+}

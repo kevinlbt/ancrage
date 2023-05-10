@@ -15,16 +15,7 @@
         opacity: 0;
     }
 
-    .appear_left {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-    
-    .appear_bot {
-        opacity: 1;
-    }
-    
-    .appear_right {
+    .appear{
         transform: translateX(0%);
         opacity: 1;
     }
@@ -55,6 +46,9 @@
         width: 15em;
         height: 2px;
         background: linear-gradient(to right, #376645 0%, #797979 100%);
+        @media (max-width: 1024px) {
+            top: -3em;
+        }
     }
 
     &::after {

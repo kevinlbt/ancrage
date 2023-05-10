@@ -12,6 +12,9 @@ const LighthouseBack = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  @media (max-width: 1024px) {
+    height: 65vw;
+  }
 `
 
 function Home() {

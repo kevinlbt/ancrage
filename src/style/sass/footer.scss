@@ -1,13 +1,10 @@
 footer {
 
     background-color: $background-footer;
-    height: 32vh;
 
     div {
 
         img {
-            bottom: -1.3em;
-            right: 2em;
             width: 20rem;
             height: auto;
         }
@@ -21,12 +18,18 @@ footer {
     .menu_footer {
 
         padding: 2em 5em 0 0;
+        @media (max-width:1024px) {
+            padding: 2em 3em 0 0;
+        }
 
         li {
             font-family: $title-font;
             font-size: 1.8em;
             font-weight: 600;
             text-align: center;
+        @media (max-width:1024px) {
+            font-size: 1.3em;
+        }
 
             &:hover {
                 color: $green;

@@ -1,0 +1,28 @@
+.big_article {
+
+    transform: translateX(4%);
+
+    img {
+        height: 60vh;
+        transform: translateX(-15%);
+    }
+
+    h2 {
+        font-family: $title-font;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 11;
+        -webkit-box-orient: vertical;
+    }
+    button {
+        background-color: $green;
+
+        &:hover {
+            background-color: $green-light;
+        }
+    }
+}

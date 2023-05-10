@@ -1,0 +1,25 @@
+.categories {
+
+    li {
+
+        font-family: $title-font;
+        font-weight: 700;
+    }
+
+    .active_cat {
+        background-color: $green;
+        color: white;
+    }
+    
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -19em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20em;
+        height: 2px;
+        background: linear-gradient(to right, #376645 0%, #797979 100%);
+    }
+}

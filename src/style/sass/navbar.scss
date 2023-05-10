@@ -7,6 +7,10 @@
             font-family: $title-font;
             font-size: 2vw;
             font-weight: bolder;
+
+            @media (max-width: 1024px) {
+                font-size: 3vw;
+            }
         & a {
         
                 & img {
