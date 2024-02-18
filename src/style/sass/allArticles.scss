@@ -1,0 +1,57 @@
+.all_article {
+
+
+    div {
+
+        border-radius: 5%;
+
+        div {
+            
+            width: 105%;
+
+            img {
+                height: 30vh;
+                border-radius: 5%;
+                @media (max-width:1200px) {
+                    height: 25vh;
+                }
+                @media (max-width:1024px) {
+                    height: 20vh;
+                }
+            }
+        }
+
+        h3 {
+            font-family: $title-font;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+
+            @media (max-width:1024px) {
+                -webkit-line-clamp: 7;
+            }
+        }
+        a {
+            background-color: $green;
+
+            &:hover {
+                background-color: $green-light;
+            }
+
+            &::after {
+
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: '\f061';
+                font-size: 1em;
+                color: white;
+                padding-left: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.contact {
+
+
+    h1 {
+
+        font-family: $title-font;
+    }
+
+    form {
+
+        input, select, textarea {
+
+            background: rgba(255, 246, 241, 0.5); /* Fond transparent */
+            backdrop-filter: blur(5px); /* Flou de 5 pixels */
+            border-bottom: solid $green 1px;
+            border-top: solid transparent 1px;
+            transition: border-top 0.5s ease-in-out;
+
+            &:focus {
+
+                outline: none;
+                border-top: solid $green 1px;
+            }
+        }
+
+        textarea {
+
+            height: 20vh;
+        }
+
+        button {
+
+            background-color: $green;
+            transition: all 0.3s ease;
+
+            &:hover {
+
+                background-color: $green-light;
+            }
+        }
+    }
+}

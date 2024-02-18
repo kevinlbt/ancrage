@@ -1,0 +1,27 @@
+@import 'variables.scss';
+@import 'navbar.scss';
+@import 'header.scss';
+@import 'banner.scss';
+@import 'objectifs.scss';
+@import 'articles.scss';
+@import 'footer.scss';
+@import 'blocPages.scss';
+@import 'about.scss';
+@import 'articlePage.scss';
+@import 'bigArticles';
+@import 'allArticles.scss';
+@import 'categories.scss';
+@import 'articleSolo.scss';
+@import 'contact.scss';
+@import 'videoBanner.scss';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background-color;
+}

@@ -1,0 +1,41 @@
+@keyframes spin_51 {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+.article_back {
+
+    // background-image: url("../assets/images/00333.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+
+    h1 {
+        font-family: $title-font;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-family: $title-font;
+        font-weight: 600;
+    }
+
+    .loader {
+        --dim: 10rem;
+        width: var(--dim);
+        height: var(--dim);
+        border: 7px solid $green;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        animation: spin_51 1.5s infinite linear;
+    
+    }
+
+}

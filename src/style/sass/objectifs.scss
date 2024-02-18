@@ -1,0 +1,65 @@
+.objs {
+    overflow: hidden;
+    .left {
+        transition: all 1.5s;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    .bot {
+        transition: all 1.5s;
+        opacity: 0;
+    }
+    .right {
+        transition: all 1.5s;
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    .appear{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+.description_text {
+
+    position: relative;
+
+    h2 {
+        font-family: $title-font;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-family: $text-font;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -4em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15em;
+        height: 2px;
+        background: linear-gradient(to right, #376645 0%, #797979 100%);
+        @media (max-width: 1024px) {
+            top: -3em;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -3em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10em;
+        height: 2px;
+        background: linear-gradient(to right, #376645 0%, #797979 100%);
+    }
+}

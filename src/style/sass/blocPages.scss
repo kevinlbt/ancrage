@@ -1,0 +1,287 @@
+.about_me {
+
+    .bloc_about {
+        background-image: url("../assets/images/grad6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        width: 43%;
+        border-radius: 0 5% 5% 0;
+
+        @media (min-width: 1277px) {
+            height: 85vh;
+        }
+
+        @media (max-width: 1024px) {
+            height: 70vh;
+        }
+
+        @media (max-width: 640px) {
+            width: 80%;
+            height: 60vh;
+        }
+    }
+
+    .img_about {
+
+        img {
+            width: 35vw;
+            top: 12vw;
+            left: 20vw;
+            
+
+            @media (max-width: 1300px) {
+                width: 40vw;
+                top: 18vw;
+                left: 16vw;
+            }
+            @media (max-width: 1024px) {
+                width: 45vw;
+                top: 25vw;
+                left: 10vw;
+            }
+            @media (max-width: 860px) {
+                width: 48vw;
+                top: 28vw;
+                left: 3vw;
+            }
+            @media (max-width: 640px) {
+                width: 65vw;
+                top: 28vw;
+                left: 8vw;
+            }
+            @media (max-width: 430px) {
+                width: 80vw;
+                top: 35vw;
+                left: 6vw;
+            }
+        }
+    }
+    
+    .img_about_walking {
+
+        img {
+            width: 30vw;
+            top: 5vw;
+            left: 25vw;
+            
+
+            @media (max-width: 1300px) {
+                width: 40vw;
+                top: 14vw;
+                left: 16vw;
+            }
+            @media (max-width: 1024px) {
+                width: 42vw;
+                top: 10vw;
+                left: 10vw;
+            }
+            @media (max-width: 860px) {
+                width: 40vw;
+                top: 25vw;
+                left: 7vw;
+            }
+            @media (max-width: 640px) {
+                width: 55vw;
+                top: 10vw;
+                left: 8vw;
+            }
+            @media (max-width: 430px) {
+                width: 70vw;
+                top: 20vw;
+                left: 4vw;
+            }
+        }
+    }
+
+    .img_about_ju {
+
+        img {
+            width: 35vw;
+            top: 4vw;
+            left: 22vw;
+            border-radius: 30% 30% 5px 5px;
+
+            @media (max-width: 1300px) {
+                width: 40vw;
+                top: 18vw;
+                left: 16vw;
+            }
+            @media (max-width: 1024px) {
+                width: 42vw;
+                top: 20vw;
+                left: 10vw;
+            }
+            @media (max-width: 860px) {
+                width: 40vw;
+                top: 35vw;
+                left: 9vw;
+            }
+            @media (max-width: 640px) {
+                width: 55vw;
+                top: 15vw;
+                left: 8vw;
+                border-radius: 30% 30% 30% 30%;
+            }
+            @media (max-width: 430px) {
+                width: 65vw;
+                top: 30vw;
+                left: 4vw;
+            }
+        }
+    }
+    .about_text {
+        background-image: url("../assets/images/grad2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        width: 53%;
+        border-radius: 5% 0 0 5%;
+
+        @media (min-width: 1277px) {
+            height: 85vh;
+        }
+
+        @media (max-width: 1024px) {
+            height: 70vh;
+        }
+        
+        @media (max-width: 640px) {
+            width: 80%;
+            height: 60vh;
+            margin-top: 2em;
+            align-self: end;
+        }
+    }
+    
+
+    h2 {
+        font-family: $title-font;
+        text-transform: uppercase;
+        padding-left: 2em;
+
+        @media (max-width: 1024px) {
+            padding-left: 1em;
+        }
+        @media (max-width: 860px) {
+            padding-left: 0.4em;
+        }
+        @media (max-width: 430px) {
+            padding-left: 0;
+        }
+    }
+    p {
+        font-family: $text-font;
+        padding-left: 10em;
+        
+        @media (max-width: 1024px) {
+            padding-left: 3em;
+        }
+        @media (max-width: 860px) {
+            padding-left: 1.5em;
+        }
+        @media (max-width: 430px) {
+            padding-left: 0;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -12em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 25em;
+        height: 2px;
+        background: linear-gradient(to right, #376645 0%, #797979 100%);
+
+        @media (max-width: 1024px) {
+            bottom: -8em;
+        }
+    }
+
+    .anchor {
+        top: 55vw;
+        left: 15vw;
+        transform: rotate(-90deg);
+        font-family: $title-font;
+        font-size: 5.5vw;
+        color: white;
+
+        @media (max-width: 1300px) {
+            top: 70vw;
+            left: 16vw;
+        }
+        @media (max-width: 1024px) {
+            top: 60vw;
+            left: 27vw;
+        }
+        @media (max-width: 860px) {
+            top: 50vw;
+            left: 34vw;
+        }
+        @media (max-width: 640px) {
+            top: 62vw;
+            left: 56vw;
+            font-size: 10vw;
+        }
+        @media (max-width: 430px) {
+            top: 90vw;
+            left: 49vw;
+            font-size: 14vw;
+        }
+    }
+}
+
+.contact_button {
+
+    background-color: $green;
+
+    &:hover {
+
+        background-color: $green-light;
+    }
+}
+
+.about_ancrage {
+    
+    .bloc_about_ancrage {
+        background-image: url("../assets/images/grad2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        width: 53%;
+        border-radius: 0 5% 5% 0;
+
+        @media (max-width: 640px) {
+            width: 80%;
+            height: 40vh;
+        }
+    }
+
+    .about_ancrage {
+        background-image: url("../assets/images/grad6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        width: 43%;
+        border-radius: 5% 0 0 5%;
+
+        @media (max-width: 640px) {
+            width: 80%;
+            height: 40vh;
+            margin-top: 2em;
+            align-self: end;
+        }
+    }
+
+    h2 {
+        font-family: $title-font;
+        text-transform: uppercase;
+        
+    }
+    p {
+        font-family: $text-font;
+    }
+}

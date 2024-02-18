@@ -1,0 +1,55 @@
+.banner {
+
+    height: 35vw;
+
+    @media (max-width: 1024px) {
+        height: 50vw;
+    }
+    @media (max-width: 640px) {
+        height: 70vw;
+    }
+
+    @keyframes wipe-enter {
+        0% {
+            -webkit-transform: scale(0, .025);
+            transform: scale(0, .025);
+        }
+
+        50% {
+            -webkit-transform: scale(1, .025);
+            transform: scale(1, .025);
+        }
+    }
+
+    .banner_wrapper {
+
+        visibility: hidden;
+
+        & .banner_wrapper_anim {
+            visibility: visible;
+            -webkit-animation: wipe-enter 0.9s 1;
+            animation: wipe-enter 0.9s 1;
+        }
+
+        .banner_text {
+
+            background-color: white;
+
+            p {
+
+                font-family: $text-font;
+                font-size: 1.6em;
+                @media (max-width: 1024px) {
+                    font-size: 1.2em;
+                }
+                @media (max-width:640px) {
+                    font-size: 0.8em;
+                }
+            }
+
+            .cit {
+                font-style: italic;
+            }
+        }
+    }
+}

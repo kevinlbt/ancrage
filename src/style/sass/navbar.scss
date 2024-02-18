@@ -1,0 +1,112 @@
+.navbar {
+
+    .desktop_menu {
+
+        @media (max-width:1024px) {
+            display: none;
+        }
+
+        .logo {
+
+            width: 15vw;
+        }
+
+        & li {
+            position: relative;
+            font-family: $title-font;
+            font-size: 1.2vw;
+            font-weight: lighter;
+
+            @media (max-width: 1400px) {
+                font-size: 1.6vw;
+            }
+
+            @media (max-width: 1024px) {
+                font-size: 2vw;
+        }
+
+        & a {
+        
+                & img {
+        
+                    -webkit-filter: drop-shadow(-15px 3px 12px rgba(0, 0, 0, 0.84));
+                    filter: drop-shadow(-15px 3px 12px rgba(0, 0, 0, 0.84));
+                    transition: transform 0.4s;
+
+                    @media (max-width: 1024px) {
+                        -webkit-filter: drop-shadow(-5px 3px 12px rgba(0, 0, 0, 0.84));
+                        filter: drop-shadow(-5px 3px 12px rgba(0, 0, 0, 0.84));
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        
+        .menu::before {
+            display: none;
+            position: absolute;
+            top: 0.1vw;
+            left: -2vw;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: '\f13d';
+            font-size: 0.9em;
+            color: $green;
+            padding-left: -20px;
+        }
+        
+        .menu:hover::before {
+            display: block;
+        }
+    }
+
+    .mobile_menu {
+
+        @media (min-width:1025px) {
+            display: none;
+        }
+
+        i {
+            font-size: 3em;
+            padding-right: 1em;
+            @media (max-width:340px) {
+                padding-right: 0.3em;
+            }
+        }
+        ul {
+            width: 20em;
+            background-color: $green-light;
+            padding: 0.3em;
+            border-radius: 0 0 0 10%;
+            position: fixed;
+            top: 0em;
+            right: 0;
+            transform: translateX(200%);
+            transition: all 0.8s;
+            z-index: 10;
+
+            li {
+                padding: 0.4em;
+                font-family: $title-font;
+                font-weight: 900;
+                font-size: 2.2em;
+                text-transform: uppercase;
+                text-align: center;
+
+                i {
+                    top: 0.4em;
+                    left: 0.7em;
+                    font-size: 1em;
+                }
+
+            }
+        }
+
+        .mobile_menu_display {
+            transform: translateX(0%);
+        }
+    }
+}
