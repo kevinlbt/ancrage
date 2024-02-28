@@ -1,5 +1,5 @@
 import { useState } from "react";
-import aboutimg from "../assets/images/about.jpg"
+import aboutimg from "../assets/images/about.webp"
 import BlocPages from "../components/blocPages";
 import aut from "../assets/images/aut.jpg"
 import girl from "../assets/images/tab.webp"
@@ -22,16 +22,16 @@ function Card({ imageSrc, altText, backText }) {
     };
   
     return (
-      <div className={`carde ${isFlipped ? 'flipped' : ''}`}
-           onMouseEnter={handleMouseEnter}
-           onMouseLeave={handleMouseLeave}>
-        <div className="fronte">
-          <img className="object-cover" src={imageSrc} alt={altText} />
+        <div onMouseOver={handleMouseEnter} onMouseOut={handleMouseLeave}>
+            <div className={`carde ${isFlipped ? 'flipped' : ''}`}>
+                <div className="fronte">
+                    <img className="object-cover" src={imageSrc} alt={altText} />
+                </div>
+                <div className="backe">
+                    <p>{backText}</p>
+                </div>
+            </div>
         </div>
-        <div className="backe">
-          <p>{backText}</p>
-        </div>
-      </div>
     );
   }
 

@@ -4,7 +4,7 @@ import Articles from '../components/articles'
 import VideoBanner from '../components/videoBanner';
 import React from 'react';
 import styled from 'styled-components'
-import Lighthouse from "../assets/images/lighthouse.jpg"
+import Lighthouse from "../assets/images/lighthouse.webp"
 
 const LighthouseBack = styled.div`
   height: 35vw;

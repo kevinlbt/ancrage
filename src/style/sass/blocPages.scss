@@ -1,5 +1,7 @@
 .about_me {
 
+    overflow: hidden;
+
     .bloc_about {
         background-image: url("../assets/images/grad6.jpg");
         background-repeat: no-repeat;
@@ -7,6 +9,8 @@
         height: 80vh;
         width: 43%;
         border-radius: 0 5% 5% 0;
+        transform: translateX(-100em);
+        transition: transform 1s ease-in-out;
 
         @media (min-width: 1277px) {
             height: 85vh;
@@ -23,6 +27,8 @@
     }
 
     .img_about {
+
+        z-index: 1;
 
         img {
             width: 35vw;
@@ -60,6 +66,8 @@
     
     .img_about_walking {
 
+        z-index: 1;
+
         img {
             width: 30vw;
             top: 5vw;
@@ -95,6 +103,8 @@
     }
 
     .img_about_ju {
+
+        z-index: 1;
 
         img {
             width: 35vw;
@@ -137,6 +147,8 @@
         height: 80vh;
         width: 53%;
         border-radius: 5% 0 0 5%;
+        transform: translateX(1000em);
+        transition: transform 1s ease-in-out;
 
         @media (min-width: 1277px) {
             height: 85vh;
@@ -185,22 +197,6 @@
         }
     }
 
-    &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: -12em;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 25em;
-        height: 2px;
-        background: linear-gradient(to right, #376645 0%, #797979 100%);
-
-        @media (max-width: 1024px) {
-            bottom: -8em;
-        }
-    }
-
     .anchor {
         top: 55vw;
         left: 15vw;
@@ -232,6 +228,12 @@
             font-size: 14vw;
         }
     }
+
+    .bloc_anime {
+
+        transform: translateX(0);
+    }
+
 }
 
 .contact_button {
@@ -242,9 +244,24 @@
 
         background-color: $green-light;
     }
+
+    &::after {
+        content: "";
+        display: block;
+        transform: translateX(-7%) translateY(30px);
+        width: 115%;
+        height: 2px;
+        background: linear-gradient(to right, #376645 0%, #797979 100%);
+
+        @media (max-width: 1024px) {
+            bottom: -9em;
+        }
+    }
 }
 
 .about_ancrage {
+    
+    overflow: hidden;
     
     .bloc_about_ancrage {
         background-image: url("../assets/images/grad2.png");
@@ -253,6 +270,8 @@
         height: 80vh;
         width: 53%;
         border-radius: 0 5% 5% 0;
+        transform: translateX(-100em);
+        transition: transform 1s ease-in-out;
 
         @media (max-width: 640px) {
             width: 80%;
@@ -267,6 +286,8 @@
         height: 80vh;
         width: 43%;
         border-radius: 5% 0 0 5%;
+        transform: translateX(100em);
+        transition: transform 1s ease-in-out;
 
         @media (max-width: 640px) {
             width: 80%;
@@ -283,5 +304,10 @@
     }
     p {
         font-family: $text-font;
+    }
+
+    .bloc_anime {
+
+        transform: translateX(0);
     }
 }

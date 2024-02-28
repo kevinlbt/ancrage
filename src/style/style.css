@@ -374,6 +374,9 @@ footer .menu_footer li:hover {
   color: #596643;
 }
 
+.about_me {
+  overflow: hidden;
+}
 .about_me .bloc_about {
   background-image: url("../assets/images/grad6.jpg");
   background-repeat: no-repeat;
@@ -381,6 +384,8 @@ footer .menu_footer li:hover {
   height: 80vh;
   width: 43%;
   border-radius: 0 5% 5% 0;
+  transform: translateX(-100em);
+  transition: transform 1s ease-in-out;
 }
 @media (min-width: 1277px) {
   .about_me .bloc_about {
@@ -397,6 +402,9 @@ footer .menu_footer li:hover {
     width: 80%;
     height: 60vh;
   }
+}
+.about_me .img_about {
+  z-index: 1;
 }
 .about_me .img_about img {
   width: 35vw;
@@ -438,6 +446,9 @@ footer .menu_footer li:hover {
     left: 6vw;
   }
 }
+.about_me .img_about_walking {
+  z-index: 1;
+}
 .about_me .img_about_walking img {
   width: 30vw;
   top: 5vw;
@@ -477,6 +488,9 @@ footer .menu_footer li:hover {
     top: 20vw;
     left: 4vw;
   }
+}
+.about_me .img_about_ju {
+  z-index: 1;
 }
 .about_me .img_about_ju img {
   width: 35vw;
@@ -527,6 +541,8 @@ footer .menu_footer li:hover {
   height: 80vh;
   width: 53%;
   border-radius: 5% 0 0 5%;
+  transform: translateX(1000em);
+  transition: transform 1s ease-in-out;
 }
 @media (min-width: 1277px) {
   .about_me .about_text {
@@ -585,22 +601,6 @@ footer .menu_footer li:hover {
     padding-left: 0;
   }
 }
-.about_me::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -12em;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 25em;
-  height: 2px;
-  background: linear-gradient(to right, #376645 0%, #797979 100%);
-}
-@media (max-width: 1024px) {
-  .about_me::after {
-    bottom: -8em;
-  }
-}
 .about_me .anchor {
   top: 55vw;
   left: 15vw;
@@ -641,6 +641,9 @@ footer .menu_footer li:hover {
     font-size: 14vw;
   }
 }
+.about_me .bloc_anime {
+  transform: translateX(0);
+}
 
 .contact_button {
   background-color: #596643;
@@ -648,7 +651,23 @@ footer .menu_footer li:hover {
 .contact_button:hover {
   background-color: #829462;
 }
+.contact_button::after {
+  content: "";
+  display: block;
+  transform: translateX(-7%) translateY(30px);
+  width: 115%;
+  height: 2px;
+  background: linear-gradient(to right, #376645 0%, #797979 100%);
+}
+@media (max-width: 1024px) {
+  .contact_button::after {
+    bottom: -9em;
+  }
+}
 
+.about_ancrage {
+  overflow: hidden;
+}
 .about_ancrage .bloc_about_ancrage {
   background-image: url("../assets/images/grad2.png");
   background-repeat: no-repeat;
@@ -656,6 +675,8 @@ footer .menu_footer li:hover {
   height: 80vh;
   width: 53%;
   border-radius: 0 5% 5% 0;
+  transform: translateX(-100em);
+  transition: transform 1s ease-in-out;
 }
 @media (max-width: 640px) {
   .about_ancrage .bloc_about_ancrage {
@@ -670,6 +691,8 @@ footer .menu_footer li:hover {
   height: 80vh;
   width: 43%;
   border-radius: 5% 0 0 5%;
+  transform: translateX(100em);
+  transition: transform 1s ease-in-out;
 }
 @media (max-width: 640px) {
   .about_ancrage .about_ancrage {
@@ -686,12 +709,15 @@ footer .menu_footer li:hover {
 .about_ancrage p {
   font-family: "Lora", serif;
 }
+.about_ancrage .bloc_anime {
+  transform: translateX(0);
+}
 
 .theme_ancrage h2 {
   font-family: "Alice", serif;
   text-transform: uppercase;
 }
-.theme_ancrage div .carde {
+.theme_ancrage div div .carde {
   width: 20vw;
   height: 20vw;
   position: relative;
@@ -699,22 +725,22 @@ footer .menu_footer li:hover {
   transition: transform 0.5s;
 }
 @media (min-width: 641px) and (max-width: 1024px) {
-  .theme_ancrage div .carde {
+  .theme_ancrage div div .carde {
     width: 30vw;
     height: 30vw;
   }
 }
 @media (max-width: 640px) {
-  .theme_ancrage div .carde {
+  .theme_ancrage div div .carde {
     width: 60vw;
     height: 60vw;
   }
 }
-.theme_ancrage div .carde .fronte, .theme_ancrage div .carde .backe {
+.theme_ancrage div div .carde .fronte, .theme_ancrage div div .carde .backe {
   position: absolute;
   backface-visibility: hidden;
 }
-.theme_ancrage div .carde .fronte {
+.theme_ancrage div div .carde .fronte {
   width: 20vw;
   height: 20vw;
   display: flex;
@@ -723,35 +749,35 @@ footer .menu_footer li:hover {
   border-radius: 10px;
 }
 @media (min-width: 641px) and (max-width: 1024px) {
-  .theme_ancrage div .carde .fronte {
+  .theme_ancrage div div .carde .fronte {
     width: 30vw;
     height: 30vw;
   }
 }
 @media (max-width: 640px) {
-  .theme_ancrage div .carde .fronte {
+  .theme_ancrage div div .carde .fronte {
     width: 60vw;
     height: 60vw;
   }
 }
-.theme_ancrage div .carde .fronte img {
+.theme_ancrage div div .carde .fronte img {
   width: 20vw;
   height: 20vw;
   border-radius: 10px;
 }
 @media (min-width: 641px) and (max-width: 1024px) {
-  .theme_ancrage div .carde .fronte img {
+  .theme_ancrage div div .carde .fronte img {
     width: 30vw;
     height: 30vw;
   }
 }
 @media (max-width: 640px) {
-  .theme_ancrage div .carde .fronte img {
+  .theme_ancrage div div .carde .fronte img {
     width: 60vw;
     height: 60vw;
   }
 }
-.theme_ancrage div .carde .backe {
+.theme_ancrage div div .carde .backe {
   width: 20vw;
   height: 20vw;
   background-color: #e4ded0;
@@ -764,21 +790,21 @@ footer .menu_footer li:hover {
   border-radius: 10px;
 }
 @media (min-width: 641px) and (max-width: 1024px) {
-  .theme_ancrage div .carde .backe {
+  .theme_ancrage div div .carde .backe {
     width: 30vw;
     height: 30vw;
   }
 }
 @media (max-width: 640px) {
-  .theme_ancrage div .carde .backe {
+  .theme_ancrage div div .carde .backe {
     width: 60vw;
     height: 60vw;
   }
 }
-.theme_ancrage div .carde.flipped {
+.theme_ancrage div div .carde.flipped {
   transform: rotateY(180deg);
 }
-.theme_ancrage div .carde.flipped .backe {
+.theme_ancrage div div .carde.flipped .backe {
   opacity: 1;
 }
 
