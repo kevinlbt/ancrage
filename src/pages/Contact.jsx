@@ -101,7 +101,7 @@ export default function Contact  () {
 
 
     return <section className="contact">
-                <h1 className="text-6xl lg:ml-24 mt-12 text-center">Contactez-moi pour toute demande :</h1>
+                <h1 className="text-6xl lg:ml-18 mt-12 text-center">Contactez-moi pour toute demande :</h1>
                 <div className="flex justify-center items-center flex-col lg:flex-row">
                     <form onSubmit={handleSubmit} className="flex flex-col w-full sm:w-4/5 lg:w-3/5 mx-auto px-5 py-6 lg:px-24 lg:py-12">
                         <div className="m-5 flex justify-between">

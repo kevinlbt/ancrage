@@ -7,93 +7,97 @@
 
     div {
 
-        .carde {
-            width: 20vw;
-            height: 20vw;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: transform 0.5s;
+        div {
 
-            @media (min-width: 641px) and (max-width: 1024px) {
-                width: 30vw;
-                height: 30vw;
-            }
-
-            @media (max-width: 640px) {
-                width: 60vw;
-                height: 60vw;
-            }
-          
-            .fronte,.backe {
-                position: absolute;
-                backface-visibility: hidden;
-            }
-        
-            .fronte {
+            .carde {
                 width: 20vw;
                 height: 20vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
-
+                position: relative;
+                transform-style: preserve-3d;
+                transition: transform 0.5s;
+    
                 @media (min-width: 641px) and (max-width: 1024px) {
                     width: 30vw;
                     height: 30vw;
                 }
-
+    
                 @media (max-width: 640px) {
                     width: 60vw;
                     height: 60vw;
                 }
-
-                img {
+              
+                .fronte,.backe {
+                    position: absolute;
+                    backface-visibility: hidden;
+                }
+            
+                .fronte {
                     width: 20vw;
                     height: 20vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     border-radius: 10px;
-
+    
                     @media (min-width: 641px) and (max-width: 1024px) {
                         width: 30vw;
                         height: 30vw;
                     }
-
+    
+                    @media (max-width: 640px) {
+                        width: 60vw;
+                        height: 60vw;
+                    }
+    
+                    img {
+                        width: 20vw;
+                        height: 20vw;
+                        border-radius: 10px;
+    
+                        @media (min-width: 641px) and (max-width: 1024px) {
+                            width: 30vw;
+                            height: 30vw;
+                        }
+    
+                        @media (max-width: 640px) {
+                            width: 60vw;
+                            height: 60vw;
+                        }
+                    }
+                }
+            
+                .backe {
+                    width: 20vw;
+                    height: 20vw;
+                    background-color: $background-footer;
+                    transform: rotateY(180deg);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: opacity 0.5s;
+                    border-radius: 10px;
+    
+                    @media (min-width: 641px) and (max-width: 1024px) {
+                        width: 30vw;
+                        height: 30vw;
+                    }
+    
                     @media (max-width: 640px) {
                         width: 60vw;
                         height: 60vw;
                     }
                 }
             }
-        
-            .backe {
-                width: 20vw;
-                height: 20vw;
-                background-color: $background-footer;
+            
+            .carde.flipped {
                 transform: rotateY(180deg);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                opacity: 0;
-                transition: opacity 0.5s;
-                border-radius: 10px;
-
-                @media (min-width: 641px) and (max-width: 1024px) {
-                    width: 30vw;
-                    height: 30vw;
-                }
-
-                @media (max-width: 640px) {
-                    width: 60vw;
-                    height: 60vw;
+              
+                .backe {
+                  opacity: 1;
                 }
             }
         }
         
-        .carde.flipped {
-            transform: rotateY(180deg);
-          
-            .backe {
-              opacity: 1;
-            }
-          }
     }
 }
