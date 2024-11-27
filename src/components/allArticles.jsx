@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 export default function AllArticles ({articlesData}) {
 
     return  <div className="all_article sm:w-5/6 grid sm:grid-cols-2 2xl:grid-cols-3 gap-6 mx-auto">
+<<<<<<< HEAD
 
             {articlesData.map(({ id, attributes }) => {
                 const { titre, contenue: contenuArticle, image } = attributes;
@@ -12,6 +13,15 @@ export default function AllArticles ({articlesData}) {
 
             return (
                     <div key={id} className="flex flex-col justify-between items-center bg-stone-200 m-8 sm:m-5 mt-12 lg:m-14">
+=======
+            {articlesData.map((article) => {
+
+            const imageUrl = article?.attributes?.image?.data?.attributes?.url;
+            const imageAlt = article?.attributes?.image?.data?.attributes?.name;
+
+            return (
+                    <div key={article.id} className="flex flex-col justify-between items-center bg-stone-200 m-8 sm:m-5 mt-12 lg:m-14">
+>>>>>>> 01dbe7b9313b141faf2cf1e9ba02fc52aec158a0
                         <div>
                             {/* Vérifie si une image est disponible avant d'afficher l'élément */}
                             {imageUrl ? (
@@ -45,6 +55,7 @@ export default function AllArticles ({articlesData}) {
 }
 
 AllArticles.propTypes = {
+<<<<<<< HEAD
     articlesData: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired,
@@ -63,3 +74,7 @@ AllArticles.propTypes = {
         })
     ).isRequired,
 };
+=======
+    articlesData: PropTypes.array.isRequired // Utilisez PropTypes.node pour représenter les enfants
+  };
+>>>>>>> 01dbe7b9313b141faf2cf1e9ba02fc52aec158a0

@@ -25,7 +25,13 @@ export default function Articles() {
     const [threeArticlesData, setThreeArticlesData] = useState([]);
 
     useEffect(() => {
+<<<<<<< HEAD
         if (Array.isArray(apiData) && apiData.length > 0) {
+=======
+        
+        if (apiData) {
+
+>>>>>>> 01dbe7b9313b141faf2cf1e9ba02fc52aec158a0
             setThreeArticlesData(apiData.slice(0, 3));
         }
     }, [apiData]);
@@ -42,7 +48,10 @@ export default function Articles() {
                 
                 const imageUrl = article?.attributes?.image?.data?.attributes?.url;
                 const imageAlt = article?.attributes?.image?.data?.attributes?.name;
+<<<<<<< HEAD
                 const contenueArticle = article?.attributes?.contenue;
+=======
+>>>>>>> 01dbe7b9313b141faf2cf1e9ba02fc52aec158a0
 
                 return (
                 <div key={article.id} className="grid_item bg-stone-200 m-6 lg:m-10 rounded-xl flex flex-col items-center" >
