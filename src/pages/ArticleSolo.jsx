@@ -7,7 +7,7 @@ import {UseApiData} from '../utils/UseApiData'
 
 export default function ArticleSolo () {
 
-    const apiData = UseApiData();
+    const apiData = UseApiData().apiData;
     const { id } = useParams();
     const [articleSoloData, setArticleSoloData] = useState([]);
 

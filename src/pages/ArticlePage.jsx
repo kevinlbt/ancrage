@@ -7,7 +7,10 @@ import {UseApiData}  from '../utils/UseApiData'
 
 export default function ArticlePage () {
 
-    const apiData = UseApiData();
+    const apiData = UseApiData().apiData;
+    const Loading = UseApiData().loading;
+    const error = UseApiData().error;
+    console.log(error);
     const [allArticlesData, setAllArticlesData] = useState([]);
     const [articlesData, setArticlesData] = useState([]);
     const [lastArticle, setLastArticles] = useState([]);
@@ -41,9 +44,11 @@ export default function ArticlePage () {
     }
 
     return <section className='article_back pt-1'>
-        {allArticlesData.length === 0 ? 
+        {Loading ? 
         <div className="loader mx-auto my-48"></div> 
-        : 
+        : error ? 
+        <div className="mx-auto my-48 text-center text-5xl text-red-600">{error.message} </div> 
+        :
         <React.Fragment>
             <h1 className='text-4xl lg:text-5xl text-center sm:text-left sm:ml-24 lg:ml-48'>- Dernier Article -</h1>
             <BigArticles lastArticle={lastArticle} />

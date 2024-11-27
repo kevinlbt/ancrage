@@ -871,7 +871,7 @@ footer .menu_footer li:hover {
 .big_article p {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 11;
+  line-clamp: 11;
   -webkit-box-orient: vertical;
 }
 @media (max-width: 1300px) {

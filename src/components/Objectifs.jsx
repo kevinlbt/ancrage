@@ -1,7 +1,7 @@
 import React from "react";
 import { useElementOnScreen } from '../utils/useElementOnScreen'
 import objs1 from "../assets/images/obj-1.webp"
-import objs2 from "../assets/images/obj-2.webp"
+import objs2 from "../assets/images/objs-1.jpg"
 import objs3 from "../assets/images/obj-3.webp"
 
 export default function Objectifs() {

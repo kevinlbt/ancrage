@@ -29,7 +29,7 @@
     p {
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 11;
+        line-clamp: 11;
         -webkit-box-orient: vertical;
         @media (max-width:1300px) {
             -webkit-line-clamp: 9;
