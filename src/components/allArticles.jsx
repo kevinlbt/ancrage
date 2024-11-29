@@ -12,6 +12,7 @@ export default function AllArticles ({articlesData}) {
 
             return (
                     <div key={id} className="flex flex-col justify-between items-center bg-stone-200 m-8 sm:m-5 mt-12 lg:m-14">
+
                         <div>
                             {/* Vérifie si une image est disponible avant d'afficher l'élément */}
                             {imageUrl ? (
@@ -63,3 +64,4 @@ AllArticles.propTypes = {
         })
     ).isRequired,
 };
+

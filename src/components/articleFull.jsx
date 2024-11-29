@@ -22,7 +22,7 @@ export default function ArticleFull ({dataArticle}) {
     )}
   </article>
 
-  
+
 }
 
 ArticleFull.propTypes = {
