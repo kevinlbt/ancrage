@@ -20,8 +20,9 @@ export default function ArticleFull ({dataArticle}) {
     ) : (
         <p className="content w-3/4 m-7 pb-12 mx-auto flex flex-col justify-center">Aucun contenue</p>
     )}
-    
   </article>
+
+  
 }
 
 ArticleFull.propTypes = {
