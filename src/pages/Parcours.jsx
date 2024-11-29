@@ -1,6 +1,7 @@
 
 import parcours from "../assets/images/walking.svg"
 import BlocPages from "../components/blocPages";
+import PropTypes from 'prop-types';
 
 export default function Parcours () {
 
@@ -23,3 +24,13 @@ export default function Parcours () {
             />
         </div>
 }
+
+BlocPages.propTypes = {
+    imgSrc: PropTypes.string.isRequired, // Le chemin de l'image (obligatoire)
+    title1: PropTypes.string.isRequired, // Titre principal (obligatoire)
+    title2: PropTypes.string, // Titre secondaire (optionnel)
+    text1: PropTypes.string.isRequired, // Premier texte (obligatoire)
+    text2: PropTypes.string.isRequired, // Deuxième texte (obligatoire)
+    button: PropTypes.bool, // Affichage d'un bouton (optionnel)
+    stylized: PropTypes.string, // Classe CSS supplémentaire (optionnelle)
+  };
